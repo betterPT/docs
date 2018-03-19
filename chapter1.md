@@ -2,22 +2,22 @@
 
 ### Search for nearby clinics
 
-### ![](/assets/Simulator Screen Shot - iPhone SE - 2018-03-18 at 02.24.11.png) 
+### ![](/assets/Simulator Screen Shot - iPhone SE - 2018-03-18 at 02.24.11.png)
 
+#### Example Query
 
-
-#### Query
-
-* radius
-* latitude
-* longitude
-* date
+```
+{
+  "radius": 400,
+  "latitude": 40.758464,
+  "longitude": -73.981806,
+  "date": "2018-03-01T17:32:45.113Z"
+}
+```
 
 
 
 #### Example Response
-
-
 
 ```
 {
@@ -116,39 +116,23 @@
       },
 ```
 
-
-
-
-
-
-
 ### Search Results Display
-
-
 
 ![](/assets/results1.png)
 
-
-
-
-
 ### Clinic Detail View
-
-
 
 ![](/assets/clinicdetail.png)
 
+#### Example Query
 
-
-#### Query
-
-* date
-
-
+```
+{
+  "date": "2018-02-28T21:02:47.453Z"
+}
+```
 
 #### Example Response
-
-
 
 ```
 {
@@ -345,40 +329,27 @@
     ]
   }
 }
-
-
 ```
-
-
 
 ### Physical Therapist Results View
 
-
-
 ![](/assets/pt results.png)
-
-
 
 ### Physical Therapist Detail View
 
-
-
 ![](/assets/pt detail.png)
 
+#### Example Query
 
+```
+{
+  "date": "2018-02-28T21:02:47.453Z",
+  clinicId: 61
 
-#### Query
-
-
-
-* date
-* clinic id
-
-
+}
+```
 
 #### Example Response
-
-
 
 ```
 {
@@ -412,38 +383,27 @@
       }
   ]
 }
-
 ```
-
-
 
 ### Condition Detail View
 
 ![](/assets/condition booking.png)
 
-
-
-
-
 ### Booking Confirmation
-
-
 
 ![](/assets/confirm booking.png)
 
+#### Example Parameters
 
-
-#### Parameters
-
-* isFollowUpAppointment \(true/false\)
-* case
-* start time
-
-
+```
+{
+  "isFollowupAppointment": true,
+  "caseId": 51,
+  "startTime": "2018-02-28T21:02:47.453Z"
+}
+```
 
 #### Example Response
-
-
 
 ```
 {
@@ -480,12 +440,7 @@
     "employeeTherapistId" : 271
   }
 }
-
 ```
-
-
-
-
 
 
 
