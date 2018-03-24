@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Search and Booking](chapter1.md)
+* [Patient - Search and Booking](chapter1.md)
 

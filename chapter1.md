@@ -15,8 +15,6 @@
 }
 ```
 
-
-
 #### Example Response
 
 ```
